@@ -1,5 +1,6 @@
 package com.aeiric.customscrollview;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -25,6 +26,7 @@ public class HActivity extends AppCompatActivity {
         mScrollView.setOnOnHScrollListener(new HScrollView.OnHScrollListener() {
             @Override
             public void onScroll(int scrollX) {
+                mText.setTextColor(Color.parseColor("#000000"));
                 mText.setText("scrolling  X=" + scrollX);
                 Log.e("HActivity", "------scrollX----" + scrollX);
             }
@@ -32,6 +34,7 @@ public class HActivity extends AppCompatActivity {
             @Override
             public void onStop(int scrollX) {
                 mText.setText("scroll stop X=" + scrollX);
+                mText.setTextColor(Color.parseColor("#FF0000"));
                 Log.e("HActivity", "------scroll---stop---" + scrollX);
             }
         });
