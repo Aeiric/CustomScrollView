@@ -4,7 +4,8 @@
     android:layout_height="match_parent">
 
     <custom.VScrollView
-        android:layout_width="match_parent"
+        android:id="@+id/scroll"
+        android:layout_width="220dp"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -38,7 +39,36 @@
                 android:text="item of HScrollView"
                 android:textColor="#FF0000"
                 android:textSize="30sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#00FFFF"
+                android:gravity="center"
+                android:text="item of HScrollView"
+                android:textColor="#FF0000"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#00FF00"
+                android:gravity="center"
+                android:text="item of HScrollView"
+                android:textColor="#FF0000"
+                android:textSize="30sp" />
         </LinearLayout>
 
     </custom.VScrollView>
+
+    <TextView
+        android:id="@+id/tv_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/scroll"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="scrolling"
+        android:textSize="30sp" />
 </RelativeLayout>

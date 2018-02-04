@@ -125,8 +125,8 @@ public class VScrollView extends ScrollView {
 
     public interface OnVScrollListener {
 
-        public void onScroll(int scrollX);
+        public void onScroll(int scrollY);
 
-        public void onStop(int scrollX);
+        public void onStop(int scrollY);
     }
 }
