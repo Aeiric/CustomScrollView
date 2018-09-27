@@ -13,6 +13,7 @@ import java.util.TimerTask;
 
 /**
  * Created by Aeiric on 2018/1/28.
+ * 2018/09/27
  */
 
 public class VScrollView extends ScrollView {
@@ -125,8 +126,8 @@ public class VScrollView extends ScrollView {
 
     public interface OnVScrollListener {
 
-        public void onScroll(int scrollX);
+        public void onScroll(int scrollY);
 
-        public void onStop(int scrollX);
+        public void onStop(int scrollY);
     }
 }
